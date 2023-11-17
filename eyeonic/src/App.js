@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello</h1>
-      <div>
+      <nav>
         <Link to="/signin">Sign In</Link>
-      </div>
+      </nav>
       <Routes>
         <Route path='/signin' element={<SignIn />}/>
       </Routes>
