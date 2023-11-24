@@ -21,22 +21,22 @@ function App() {
         </div>
         <table className='navbar'>
           <tr>
-            <td><Link to='/'>Home</Link></td>
-            <td className='dropdown'><Link to="/products">Products</Link></td>
-            <td><Link to="/sales">Sales</Link></td>
-            <td><Link to="/about">About</Link></td>
-            <td><Link to="/contact">Contact</Link></td>
+            <td><Link to='/Nhom3-eProject'>Home</Link></td>
+            <td className='dropdown'><Link to="/Nhom3-eProject/products">Products</Link></td>
+            <td><Link to="/Nhom3-eProject/sales">Sales</Link></td>
+            <td><Link to="/Nhom3-eProject/about">About</Link></td>
+            <td><Link to="/Nhom3-eProject/contact">Contact</Link></td>
           </tr>
         </table>
       </nav>
 
       <Routes>
-        <Route path='/' />
-        <Route path='/products' />
-        <Route path='/sales' />
-        <Route path='/about' />
-        <Route path='/contact' />
-        <Route path='/signin' element={<SignIn />} />
+        <Route path='/Nhom3-eProject' />
+        <Route path='/Nhom3-eProject/products' />
+        <Route path='/Nhom3-eProject/sales' />
+        <Route path='/Nhom3-eProject/about' />
+        <Route path='/Nhom3-eProject/contact' />
+        <Route path='/Nhom3-eProject/user' element={<SignIn />} />
       </Routes>
     </div>
   );

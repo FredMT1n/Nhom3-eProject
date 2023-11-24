@@ -10,7 +10,7 @@ function SignIn() {
     };
     return (
         <div className='body'>
-            <div className={isActive ? "container active" : "container"} id="container">
+            <div className={isActive ? "container" : "container active"} id="container">
                 <div className="form-container sign-up">
                     <form>
                         <h1>Create account</h1>
