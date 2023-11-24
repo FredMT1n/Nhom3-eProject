@@ -23,10 +23,10 @@ function Header() {
                 <a href="/">
                     <FontAwesomeIcon icon="fa-solid fa-bell" className='fa-xl' />
                 </a>
-                <a href="/user">
+                <a href="/Nhom3-eProject/user">
                     <FontAwesomeIcon icon="fa-solid fa-user" className='fa-xl' />
                 </a>
-                <a href='/cart'>
+                <a href='/Nhom3-eProject/cart'>
                     <FontAwesomeIcon icon="fa-solid fa-cart-shopping" className='fa-xl' />
                 </a>
             </div>
