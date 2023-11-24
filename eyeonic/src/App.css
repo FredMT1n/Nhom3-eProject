@@ -7,13 +7,16 @@
 
 .menu {
   position: absolute;
+  left: 18%;
+  top: 24%;
 }
 
 .navbar {
   margin: auto;
   width: 60%;
   margin-top: 20px;
-  border: 2px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   text-align: center;
 }
 
@@ -21,4 +24,366 @@
   width: 130px;
   height: 50px;
   text-decoration: none;
+}
+
+.nav-link-to {
+  text-decoration: none;
+}
+
+.product-line {
+  margin-top: 790px;
+  position: relative;
+  width: 100%;
+}
+
+.product-line .product {
+  height: 310px;
+  left: 1208px;
+  position: absolute;
+  top: 0;
+  width: 269px;
+}
+
+.product-line .overlap-group {
+  background-color: #ffffff;
+  border: 3px solid;
+  border-color: #9fc7eb;
+  height: 316px;
+  left: -3px;
+  position: relative;
+  top: -3px;
+  width: 271px;
+}
+
+.product-line .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 133px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 267px;
+}
+
+.product-line .div {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 238px;
+}
+
+.product-line .rectangle {
+  background-color: #d9d9d9;
+  height: 207px;
+  left: 12px;
+  position: absolute;
+  top: 18px;
+  width: 240px;
+}
+
+.product-line .overlap-wrapper {
+  height: 310px;
+  left: 906px;
+  position: absolute;
+  top: 0;
+  width: 269px;
+}
+
+.product-line .overlap-group-wrapper {
+  height: 310px;
+  left: 604px;
+  position: absolute;
+  top: 0;
+  width: 269px;
+}
+
+.product-line .div-wrapper {
+  height: 310px;
+  left: 302px;
+  position: absolute;
+  top: 0;
+  width: 269px;
+}
+
+.product-line .product-2 {
+  height: 310px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 269px;
+}
+
+.footer {
+  margin-top: 1180px;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  }
+  .footer .footer-copyright {
+  height: 88px;
+  left: 1048px;
+  position: absolute;
+  top: 340px;
+  width: 386px;
+  }
+  .footer .overlap-group {
+  background-color: #d9d9d9;
+  height: 88px;
+  position: relative;
+  width: 384px;
+  }
+  .footer .copyright-by-name-s {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 88px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 384px;
+  }
+  .footer .footer-about {
+  height: 102px;
+  left: 1218px;
+  position: absolute;
+  top: 133px;
+  width: 177px;
+  }
+  .footer .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  height: 24px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  }
+  .footer .div {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 24px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 39px;
+  white-space: nowrap;
+  }
+  .footer .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 24px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 78px;
+  white-space: nowrap;
+  }
+  .footer .footer-contact {
+  height: 141px;
+  left: 813px;
+  position: absolute;
+  top: 133px;
+  width: 252px;
+  }
+  .footer .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 24px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 117px;
+  white-space: nowrap;
+  }
+  .footer .footer-policy {
+  height: 180px;
+  left: 460px;
+  position: absolute;
+  top: 133px;
+  width: 175px;
+  }
+  .footer .text-wrapper-4 {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 24px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 156px;
+  white-space: nowrap;
+  }
+  .footer .footer-product {
+  height: 180px;
+  left: 123px;
+  position: absolute;
+  top: 133px;
+  width: 118px;
+  }
+  .footer .overlap {
+  height: 91px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 1448px;
+  }
+  .footer .footer-banner {
+  height: 72px;
+  left: 0;
+  position: absolute;
+  top: 19px;
+  width: 1448px;
+  }
+  .footer .overlap-2 {
+  background-color: #d9d9d9;
+  height: 72px;
+  position: relative;
+  width: 1440px;
+  }
+  .footer .text-wrapper-5 {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+  height: 44px;
+  left: 111px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  }
+  .footer .text-wrapper-6 {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 24px;
+  left: 777px;
+  letter-spacing: 0;
+  line-height: normal;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  text-align: center;
+  top: 21px;
+  white-space: nowrap;
+  }
+  .footer .text-wrapper-7 {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 24px;
+  left: 996px;
+  letter-spacing: 0;
+  line-height: normal;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  text-align: center;
+  top: 21px;
+  white-space: nowrap;
+  }
+  .footer .text-wrapper-8 {
+  color: #000000;
+  font-family: "Inter-ExtraLight", Helvetica;
+  font-size: 20px;
+  font-weight: 200;
+  height: 24px;
+  left: 1265px;
+  letter-spacing: 0;
+  line-height: normal;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  text-align: center;
+  top: 21px;
+  white-space: nowrap;
+  }
+  .footer .footer-icons {
+    height: 40px;
+    margin-left: 550px;
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    width: 138px;
+  }
+  
+  .footer .facebook,
+  .footer .twitter,
+  .footer .instagram {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    width: 80px;
+  }
+  
+  .footer .facebook {
+    left: 0;
+  
+  }
+  
+  .footer .twitter {
+    left: 49px; /* Adjust the left position as needed */
+  }
+  
+  .footer .instagram {
+    left: 98px; /* Adjust the left position as needed */
+  }
+  .footer .footer-icons ion-icon {
+    font-size: 40px;
+  }
+ 
+  .home-icons ion-icon {
+    font-size: 40px; /* Chọn kích thước mong muốn, ví dụ 24px */
+}
+
+
+
+/* CSS để chỉnh kích thước của biểu tượng search */
+.menu ion-icon{
+    font-size: 45px; /* Chọn kích thước mong muốn, ví dụ 24px */
+}
+
+/* CSS để chỉnh kích thước của các biểu tượng khác, ví dụ: bell, user */
+.shopping-cart ion-icon,
+.search ion-icon ,
+.bell ion-icon,
+.user ion-icon {
+    font-size: 40px;
+    margin-top: 5px; /* Chọn kích thước mong muốn, ví dụ 24px */
+}
+.arrow-down ion-icon{
+  font-size: 29px;
+  margin-left: -30px;
+  margin-top: 5px;
 }
