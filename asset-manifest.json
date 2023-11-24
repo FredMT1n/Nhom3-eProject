@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Nhom3-eProject/static/css/main.754e616e.css",
-    "main.js": "/Nhom3-eProject/static/js/main.17712949.js",
+    "main.js": "/Nhom3-eProject/static/js/main.a8c1d051.js",
     "static/js/787.70c98c4b.chunk.js": "/Nhom3-eProject/static/js/787.70c98c4b.chunk.js",
     "static/media/EyeonicLogo.png": "/Nhom3-eProject/static/media/EyeonicLogo.2115c2b46193a377e991.png",
     "index.html": "/Nhom3-eProject/index.html",
     "main.754e616e.css.map": "/Nhom3-eProject/static/css/main.754e616e.css.map",
-    "main.17712949.js.map": "/Nhom3-eProject/static/js/main.17712949.js.map",
+    "main.a8c1d051.js.map": "/Nhom3-eProject/static/js/main.a8c1d051.js.map",
     "787.70c98c4b.chunk.js.map": "/Nhom3-eProject/static/js/787.70c98c4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.754e616e.css",
-    "static/js/main.17712949.js"
+    "static/js/main.a8c1d051.js"
   ]
 }
