@@ -23,7 +23,7 @@ function Header() {
                 <a href="/">
                     <FontAwesomeIcon icon="fa-solid fa-bell" className='fa-xl' />
                 </a>
-                <Link to='/Nhom3-eProject/user'>
+                <Link to="/Nhom3-eProject/user">
                     <FontAwesomeIcon icon="fa-solid fa-user" className='fa-xl' />
                 </Link>
 

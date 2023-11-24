@@ -7,7 +7,6 @@ import SignIn from './SignIn';
 import Header from './Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Footer } from './Footer';
-import Product from './Product';
 import './ProductInfo.json'
 
 library.add(faFacebook, faInstagram, faGooglePlusG, faTwitter, faMagnifyingGlass, faBell, faCartShopping, faUser, faBars)
@@ -37,7 +36,7 @@ function App() {
 
       <Routes>
         <Route path='/Nhom3-eProject' />
-        <Route path='/Nhom3-eProject/products' element={<Product />} />
+        <Route path='/Nhom3-eProject/products' />
         <Route path='/Nhom3-eProject/sales' />
         <Route path='/Nhom3-eProject/about' />
         <Route path='/Nhom3-eProject/contact' />
@@ -45,7 +44,6 @@ function App() {
         <Route path='/Nhom3-eProject/user' element={<SignIn />} />
       </Routes>
       <footer>
-        <Footer />
       </footer>
     </div>
   );
