@@ -15,6 +15,7 @@ import Products from './pages/Products';
 import Sales from './pages/Sales';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Cart from './pages/Cart';
 
 library.add(faFacebook, faInstagram, faGooglePlusG, faTwitter, faMagnifyingGlass, faBell, faCartShopping, faUser, faBars)
 
@@ -42,9 +43,9 @@ function App() {
         <Route path='/Nhom3-eProject/contact' element={<Contact />} />
         <Route path='/Nhom3-eProject/productdetails' element={<ProductInfo />} />
         <Route path='/Nhom3-eProject/user' element={<SignIn />} />
-        <Route path="/Nhom3-eProject/products/:id" element={<ProductDesign />} />
+        <Route path='/Nhom3-eProject/products/:id' element={<ProductDesign />} />
+        <Route path='/Nhom3-eProject/cart' element={<Cart />}/>
       </Routes>
-      <Review />
     </div>
   );
 }

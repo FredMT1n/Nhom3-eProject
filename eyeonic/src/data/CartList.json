@@ -1,0 +1,30 @@
+[
+    {
+      "id": "1",
+      "name": "Rayban Nam - Gọng Kim Loại - Mã 0RX3691V_2509_50",
+      "picture": "./image/RayBan_1.webp",
+      "price": 4060000,
+      "quantity": 1
+    },
+    {
+      "id": "2",
+      "name": "Rayban Nam - Gọng kim loại - Tròng phân cực - Lọc tia UV - Mã 0RB3691_001/P1_51",
+      "picture": "./image/RayBan_2.webp",
+      "price": 6280000,
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "name": "Rayban Nam - Gọng kim loại - Tròng phân cực - Lọc tia UV - Mã 0RB8237_3141K8_53",
+      "picture": "./image/RayBan_3.webp",
+      "price": 13280000,
+      "quantity": 1
+    },
+    {
+      "id": "4",
+      "name": "Rayban Nam - Gọng kính Kim Loại mạ bạc - Mã 0RX3691VF_2502_53",
+      "picture": "./image/RayBan_4.webp",
+      "price": 4060000,
+      "quantity": 1
+    }
+  ]
