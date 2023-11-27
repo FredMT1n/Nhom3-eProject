@@ -4,7 +4,6 @@ import { faFacebook, faInstagram, faGooglePlusG, faTwitter } from '@fortawesome/
 import './App.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import Header from './components/Header';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './data/ProductInfo.json'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductDesign from './components/ProductDesign';
