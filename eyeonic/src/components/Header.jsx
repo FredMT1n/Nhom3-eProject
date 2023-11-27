@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from './image/EyeonicLogo.png'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Header.css'
@@ -9,8 +8,8 @@ function Header() {
         <div>
             <div className='logo-container'>
                 <div className="site-logo">
-                    <Link to='/'>
-                        <img src={logo} alt="Website Logo" />
+                    <Link to='/Nhom3-eProject'>
+                        <img src={process.env.PUBLIC_URL + '/image/EyeonicLogo.png'} alt="Website Logo" />
                     </Link>
                 </div>
                 <span>Eyeonic</span>
