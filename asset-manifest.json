@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/Nhom3-eProject/static/css/main.7ba6231e.css",
-    "main.js": "/Nhom3-eProject/static/js/main.0edf1f30.js",
+    "main.css": "/Nhom3-eProject/static/css/main.d0c72aae.css",
+    "main.js": "/Nhom3-eProject/static/js/main.f9ed446a.js",
     "static/js/787.70c98c4b.chunk.js": "/Nhom3-eProject/static/js/787.70c98c4b.chunk.js",
+    "static/media/post5.webp": "/Nhom3-eProject/static/media/post5.a74c72d5c8ff41d1cbb0.webp",
+    "static/media/post2.webp": "/Nhom3-eProject/static/media/post2.5ca236af572486a871d0.webp",
+    "static/media/post4.webp": "/Nhom3-eProject/static/media/post4.df2c77293a09df9bfdb5.webp",
+    "static/media/post3.webp": "/Nhom3-eProject/static/media/post3.1bffe0697f416dde3923.webp",
+    "static/media/post1.webp": "/Nhom3-eProject/static/media/post1.d2245a0ab8f64f850d82.webp",
+    "static/media/revicons.eot": "/Nhom3-eProject/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Nhom3-eProject/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Nhom3-eProject/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/slick.svg": "/Nhom3-eProject/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Nhom3-eProject/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Nhom3-eProject/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Nhom3-eProject/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Nhom3-eProject/index.html",
-    "main.7ba6231e.css.map": "/Nhom3-eProject/static/css/main.7ba6231e.css.map",
-    "main.0edf1f30.js.map": "/Nhom3-eProject/static/js/main.0edf1f30.js.map",
+    "main.d0c72aae.css.map": "/Nhom3-eProject/static/css/main.d0c72aae.css.map",
+    "main.f9ed446a.js.map": "/Nhom3-eProject/static/js/main.f9ed446a.js.map",
     "787.70c98c4b.chunk.js.map": "/Nhom3-eProject/static/js/787.70c98c4b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ba6231e.css",
-    "static/js/main.0edf1f30.js"
+    "static/css/main.d0c72aae.css",
+    "static/js/main.f9ed446a.js"
   ]
 }
