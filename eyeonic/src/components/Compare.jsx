@@ -32,14 +32,14 @@ function Compare(props) {
                 <Table>
                     <tbody style={{ textAlign: "center", display: "flex" }}>
                         {compareItem.map((info) => (
-                            <tr className='compare-table-row' >
-                                <td className='compare-table-cell'><img src={process.env.PUBLIC_URL + info.picture} alt="Compare Item" width="100px" height="100px" /></td>
-                                <td className='compare-table-name'>{info.name}</td>
-                                <td className='compare-table-cell'>{info.price}</td>
-                                <td className='compare-table-cell'>{info.material}</td>
-                                <td className='compare-table-cell'>{info.design}</td>
-                                <td className='compare-table-cell'>{info.features}</td>
-                                <td className='compare-table-cell'>
+                            <tr>
+                                <td><img src={process.env.PUBLIC_URL + info.picture} alt="Compare Item" width="100px" height="100px" /></td>
+                                <td>{info.name}</td>
+                                <td>{info.price}</td>
+                                <td>{info.material}</td>
+                                <td>{info.design}</td>
+                                <td>{info.features}</td>
+                                <td>
                                     <Button variant='danger' onClick={() => deleteCompareItem(info.id)}>Remove</Button>
                                 </td>
                             </tr>

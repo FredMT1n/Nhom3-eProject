@@ -5,7 +5,6 @@ import Product from './Product';
 
 function BestSeller() {
     const [products, setProducts] = useState([]);
-    const bestSeller = [];
 
     const getProducts = () => {
         fetch("https://653f530b9e8bd3be29e04625.mockapi.io/products")
@@ -14,16 +13,6 @@ function BestSeller() {
     }
 
     useEffect(() => getProducts(), []);
-
-    const getBestSeller = () => {
-        products.map((info, index) => {
-            if (info.id <= 70 && info.id >= 65) {
-                bestSeller.push(info)
-            }
-        })
-    }
-
-    useEffect(() => getBestSeller(), []);
 
     return (
         <Carousel

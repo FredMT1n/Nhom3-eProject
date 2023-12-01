@@ -14,12 +14,11 @@ function ProductList() {
 
     useEffect(() => getProducts(), []);
 
-
     return (
         <div style={{ display: "flex", flexDirection: "row" }}>
             <Row className="g-3">
                 {products.map((info, index) => (
-                    <Col style={{display: "flex"}}>
+                    <Col style={{ display: "flex" }}>
                         <Product
                             id={info.id}
                             name={info.name}

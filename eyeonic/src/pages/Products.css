@@ -15,3 +15,21 @@
     text-align: right;
 }
 
+.rounded-circle1 {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+  }
+  
+  .hidden2 {
+    display: none;
+  }
+
