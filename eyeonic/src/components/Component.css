@@ -1,0 +1,52 @@
+.navbar-1 {
+  width: 100%;
+}
+
+.logo-container {
+  width: 45px;
+  /* Set your desired width */
+  height: 45px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  /* Adjust the margin as needed */
+}
+
+.form-container-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto
+}
+
+.control-1 {
+  margin-right: 10px;
+  /* Adjust the margin as needed */
+  width: 300px;
+}
+
+.search-icon {
+  color: black;
+  /* Set your desired icon color */
+  margin-right: 30px;
+}
+
+/* User icons styles */
+.user-icons {
+  display: flex;
+  align-items: center;
+}
+
+.fa-xl {
+  margin-left: 20px;
+  /* Adjust the margin as needed */
+  color: black
+    /* Set your desired icon color */
+}
+
+.namebrand {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}

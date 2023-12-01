@@ -1,0 +1,19 @@
+.about-header {
+    color: blue;
+}
+
+.about-content-pic {
+    display: block;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.about-content-text {
+    display: block;
+    width: 60vw;
+    margin: auto;
+    text-align: left;
+}

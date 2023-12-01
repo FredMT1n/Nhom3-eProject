@@ -1,72 +1,82 @@
 import '../App.css';
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import { GoPlusCircle } from "react-icons/go";
+import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
+import { useCart } from 'react-use-cart';
 
 function ProductDesign() {
-    const {id} = useParams();
+    const { id } = useParams();
     const [quantity, setQuantity] = useState(1);
     const [product, setProduct] = useState({});
 
+    const formatter = new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND'
+    })
+
+    const { addItem } = useCart();
+
     //Quantity - START
-    const handleDecrement= () => {
-        if(quantity > 1){
+    const handleDecrement = () => {
+        if (quantity > 1) {
             setQuantity(prevCount => prevCount - 1);
         }
     }
-    const handleIncrement= () => {
-        if(quantity < 99){
-        setQuantity(prevCount => prevCount + 1);
+    const handleIncrement = () => {
+        if (quantity < 99) {
+            setQuantity(prevCount => prevCount + 1);
         }
     }
     //Quantity - END
-    
+
     useEffect(() => {
-        fetch(`https://653f52029e8bd3be29e04240.mockapi.io/product`)
-        .then((data) => data.json())
-        .then((usr) => setProduct(usr));
+        fetch(`https://653f530b9e8bd3be29e04625.mockapi.io/products/${id}`)
+            .then((data) => data.json())
+            .then((usr) => setProduct(usr));
     }, [id]);
-    return ( 
-        <div class="row">
-            <aside class="col-md-6">
+
+    return (
+        <div className="row" style={{border: "0px"}}>
+            <aside className="col-md-6">
                 <div>
-                    <img src={product.image} alt='product'className='product'/>
+                    <img src={process.env.PUBLIC_URL + product.picture} alt='product' className='product' />
                 </div>
             </aside>
-            <main class="col-md-5">
+            <main className="col-md-5">
                 <article>
-                    <div class="mb-5 " className='productbox'>
-                        <h1 className='product-title'>{product.name}</h1>
-                        <h4>5.0 <MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 />| 88 rating | <GoPlusCircle />Compare</h4>
-                        <b className='price'>{product.price}</b>
-                            <div className='quantity'>
-                                <h4>
-                                    Quantity
-                                </h4>
-                                <div className='abc'>
-                                    <div className='col-md-3 mt-3'>
-                                        <div className='input-group'>
-                                            <button type="button" onClick={handleDecrement} className='input-group-text'>-</button>
-                                            <div className='form-control text-center'>{quantity}</div>
-                                            <button type="button" onClick={handleIncrement} className='input-group-text'>+</button>
-                                        </div>
+                    <div className='productbox'>
+                        <span className='product-title'>{product.name}</span>
+                        <h4>
+                            5.0
+                            <MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 />
+                            <span>| 88 rating |</span>
+                            <Button variant="primary">Compare with others</Button>
+                        </h4>
+                        <b className='price'>{formatter.format(product.price)}</b>
+                        <div className='quantity'>
+                            <h4>Quantity</h4>
+                            <div className='abc'>
+                                <div className='col-md-3 mt-3'>
+                                    <div className='input-group'>
+                                        <button type="button" onClick={handleDecrement} className='input-group-text'>-</button>
+                                        <div className='form-control text-center'>{quantity}</div>
+                                        <button type="button" onClick={handleIncrement} className='input-group-text'>+</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className='AddBuy'>
-                                    <button className='add'>🛒Add to cart</button>
-                                    <button className='buy'>Buy now</button>  
-                            </div>
-
-                           
+                        <div className='AddBuy' key={product.id}>
+                            <button className='add' onClick={() => addItem(product, quantity)}>🛒Add to cart</button>
+                            <button className='buy'>Buy now</button>
+                        </div>
                     </div>
                 </article>
             </main>
         </div>
 
-     );
+    );
 }
 
 export default ProductDesign;

@@ -1,0 +1,17 @@
+.products-container {
+    display: flex;
+}
+
+.filter {
+    width: 35%;
+    border: black 2px solid;
+}
+
+.products-list {
+    width: 65%;
+}
+
+.sub-header {
+    text-align: right;
+}
+

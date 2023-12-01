@@ -1,9 +1,46 @@
+import ProductList from "../components/ProductList";
+import React, { useState, useEffect } from 'react';
+import './Products.css'
+import Compare from "../components/Compare";
+import { Button } from "react-bootstrap";
+
 function Products() {
-    return ( 
+    const [modalShow, setModalShow] = useState(false);
+
+    const [compareItem, setCompareItems] = useState([]);
+
+    const getCompares = () => {
+        fetch("https://653f530b9e8bd3be29e04625.mockapi.io/compare")
+            .then((data) => data.json())
+            .then((compareList) => setCompareItems(compareList));
+    }
+
+    useEffect(() => getCompares(), []);
+
+    return (
         <div>
-            <h1>Products</h1>
+            <div className="sub-header">
+                <Button variant="primary" onClick={() => setModalShow(true)}>
+                    Compare
+                    <div className={(compareItem.length > 0) ? "rounded-circle" : "rounded-circle hidden1"}>
+                        {compareItem.length}
+                    </div>
+                </Button>
+            </div>
+            <Compare
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
+            <div className="products-container">
+                <div className="filter">
+                    <h1>Filter</h1>
+                </div>
+                <div className="products-list">
+                    <ProductList />
+                </div>
+            </div>
         </div>
-     );
+    );
 }
 
 export default Products;

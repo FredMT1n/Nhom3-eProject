@@ -7,7 +7,7 @@ function ProductDetail() {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch(`https://653f52029e8bd3be29e04240.mockapi.io/product`)
+        fetch(`https://653f530b9e8bd3be29e04625.mockapi.io/products/${id}`)
         .then((data) => data.json())
         .then((usr) => setProduct(usr));
     }, [id]);
@@ -15,7 +15,7 @@ function ProductDetail() {
     return ( 
         
         <div className="user-detail-container">
-            <img src={product.image} alt={product.name} className="product-profile-pic"/>
+            <img src={process.env.PUBLIC_URL + product.image} alt={product.name} className="product-profile-pic"/>
             <div className='detail'>
                 <h2 className="product-name">{product.name}</h2>
                 <h3>{product.price}</h3>
