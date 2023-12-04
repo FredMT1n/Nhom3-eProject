@@ -22,6 +22,11 @@ function Compare(props) {
         })
     }
 
+    const formatter = new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND'
+    })
+
     const DisplayCompare = () => {
         if (compareItem.length === 0) {
             return (
@@ -35,10 +40,10 @@ function Compare(props) {
                             <tr className='compare-table-row'>
                                 <td><img src={process.env.PUBLIC_URL + info.picture} alt="Compare Item" width="100px" height="100px" /></td>
                                 <td>{info.name}</td>
-                                <td>{info.price}</td>
-                                <td>{info.material}</td>
-                                <td>{info.design}</td>
-                                <td>{info.features}</td>
+                                <td>{formatter.format(info.price)}</td>
+                                <td>{info.material.toUpperCase()}</td>
+                                <td>{info.design.toUpperCase()}</td>
+                                <td>{info.features.toUpperCase()}</td>
                                 <td>
                                     <Button variant='danger' onClick={() => deleteCompareItem(info.id)}>Remove</Button>
                                 </td>

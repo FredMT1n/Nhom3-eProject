@@ -1,7 +1,7 @@
 {
   "name": "eyeonic",
   "version": "0.1.0",
-  "homepage": "https://FredMT1n.github.io/Nhom3-eProject",
+  "homepage": "https://fredmt1n.github.io/Nhom3-eProject/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",

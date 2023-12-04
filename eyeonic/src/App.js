@@ -2,7 +2,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faMagnifyingGlass, faCartShopping, faUser, faBell, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faGooglePlusG, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import './data/ProductInfo.json'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductDesign from './components/ProductDesign';
@@ -21,7 +21,7 @@ library.add(faFacebook, faInstagram, faGooglePlusG, faTwitter, faMagnifyingGlass
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <NavbarAll />
         <Routes>
@@ -38,7 +38,7 @@ function App() {
         </Routes>
         <Footer1 />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
