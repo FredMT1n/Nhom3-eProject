@@ -25,16 +25,15 @@ function App() {
       <div className="App">
         <NavbarAll />
         <Routes>
-          <Route path='/Nhom3-eProject/home' element={<Home />} />
-          <Route path='/' element={<Navigate replace to='/Nhom3-eProject/home' />} />
-          <Route path='/Nhom3-eProject/product' element={<Products />} />
-          <Route path='/Nhom3-eProject/sale' element={<Sales />} />
-          <Route path='/Nhom3-eProject/about' element={<About />} />
-          <Route path='/Nhom3-eProject/contact' element={<Contact />} />
-          <Route path='/Nhom3-eProject/productdetails' element={<ProductInfo />} />
-          <Route path='/Nhom3-eProject/user' element={<SignIn />} />
-          <Route path='/Nhom3-eProject/products/:id' element={<ProductDesign />} />
-          <Route path='/Nhom3-eProject/cart' element={<Cart />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/product' element={<Products />} />
+          <Route path='/sale' element={<Sales />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/productdetails' element={<ProductInfo />} />
+          <Route path='/user' element={<SignIn />} />
+          <Route path='/products/:id' element={<ProductDesign />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
         <Footer1 />
       </div>

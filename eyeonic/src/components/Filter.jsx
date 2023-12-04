@@ -43,7 +43,7 @@ function Filter() {
                 <Form.Check type="checkbox" value='universal lenses' label='Universal lenses' />
                 <Form.Check type="checkbox" value='shady' label='Shady' />
             </Form>
-            <Button variant="light" style={{ marginTop: "30px" }}>
+            <Button variant="light" style={{ marginTop: "30px" }} onClick={() => {alert("Filter applied succesfully")}}>
                 Apply Filter
             </Button>
         </div>
