@@ -25,7 +25,7 @@ function Product({ name, brand, image, price, id, material, design, features }) 
                 // Send your data in the request body as JSON
                 body: JSON.stringify(newCompareItems)
             }).then(() => {
-                navigate('/Nhom3-eProject/product')
+                navigate('/product')
             }).then(() => {
                 alert("Add to compare success")
             })
@@ -41,7 +41,7 @@ function Product({ name, brand, image, price, id, material, design, features }) 
 
     return (
 
-        <Card style={{ width: "300px", cursor: "pointer", transition: "0.5s all" }} onClick={() => navigate(`/Nhom3-eProject/products/${id}`)}>
+        <Card style={{ width: "300px", cursor: "pointer", transition: "0.5s all" }} onClick={() => navigate(`/products/${id}`)}>
             <div>
                 <Card.Img variant="top" src={process.env.PUBLIC_URL + image} width='300px' height='300px' />
                 <Card.Body style={{ display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
