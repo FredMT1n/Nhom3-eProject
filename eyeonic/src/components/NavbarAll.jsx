@@ -39,14 +39,14 @@ export default function NavbarAll() {
   return (
     <Navbar expand="lg" className="navbar-1" fluid>
       <Container fluid>
-        <Navbar.Brand as={Link} to="/Nhom3-eProject/home"><Link to='/Nhom3-eProject/home'>
+        <Navbar.Brand as={Link} to="/"><Link to='/Nhom3-eProject/home'>
           <img src={process.env.PUBLIC_URL + '/images/EyeonicLogo.png'} alt="Website Logo" className='logo-container' />
         </Link><span className='namebrand'>Eyeonic</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-            <Nav.Link as={Link} to="/Nhom3-eProject/home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/Nhom3-eProject/product">Product</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/product">Product</Nav.Link>
             {/* <Link to='/Nhom3-eProject/product'>
               <NavDropdown title="Product" id="navbarScrollingDropdown" renderMenuOnMount={true} >
                 <NavDropdown.Item href="#action3">1</NavDropdown.Item>
@@ -55,9 +55,9 @@ export default function NavbarAll() {
                 <NavDropdown.Item href="#action5">3</NavDropdown.Item>
               </NavDropdown>
             </Link> */}
-            <Nav.Link as={Link} to="/Nhom3-eProject/sale">Sale</Nav.Link>
-            <Nav.Link as={Link} to="/Nhom3-eProject/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/Nhom3-eProject/contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/sale">Sale</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
           <Form className="form-container-nav">
             <div style={{ position: "relative", width: "30vw" }}>
@@ -71,10 +71,10 @@ export default function NavbarAll() {
               </div> */}
             </div>            
             <div className="user-icons">
-              <a href="/Nhom3-eProject/user">
+              <a href="/user">
                 <FontAwesomeIcon icon="fa-solid fa-user" className='fa-xl' />
               </a>
-              <a href='/Nhom3-eProject/cart' style={{ position: "relative" }}>
+              <a href='/cart' style={{ position: "relative" }}>
                 <FontAwesomeIcon icon="fa-solid fa-cart-shopping" className='fa-xl' />
                 <div className={(totalUniqueItems > 0) ? "rounded-circle" : "rounded-circle hidden1"}>
                   {totalUniqueItems}
