@@ -72,15 +72,15 @@ export default function NavbarAll() {
               </div> */}
             </div>
             <div className="user-icons">
-              <a href="/user">
+              <Link to="/user">
                 <FontAwesomeIcon icon="fa-solid fa-user" className='fa-xl' />
-              </a>
-              <a href='/cart' style={{ position: "relative" }}>
+              </Link>
+              <Link to="/cart" style={{ position: "relative" }}>
                 <FontAwesomeIcon icon="fa-solid fa-cart-shopping" className='fa-xl' />
                 <div className={(totalUniqueItems > 0) ? "rounded-circle" : "rounded-circle hidden1"}>
                   {totalUniqueItems}
                 </div>
-              </a>
+              </Link>
             </div>
           </Form>
         </Navbar.Collapse>
