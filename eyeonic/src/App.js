@@ -21,7 +21,7 @@ library.add(faFacebook, faInstagram, faGooglePlusG, faTwitter, faMagnifyingGlass
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL} >
+    <HashRouter>
       <div className="App">
         <NavbarAll />
         <Routes>
