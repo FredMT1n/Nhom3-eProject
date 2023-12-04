@@ -14,7 +14,7 @@ function ProductLine() {
 
     useEffect(() => getProducts(), []);
 
-    const currentItems = products.slice(65, 74);
+    const currentItems = products.slice(30, 40);
     return (
         <Carousel
             additionalTransfrom={0}

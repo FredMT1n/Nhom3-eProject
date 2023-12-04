@@ -39,9 +39,10 @@ export default function NavbarAll() {
   return (
     <Navbar expand="lg" className="navbar-1" fluid>
       <Container fluid>
-        <Navbar.Brand as={Link} to="/"><Link to='/Nhom3-eProject/home'>
-          <img src={process.env.PUBLIC_URL + '/images/EyeonicLogo.png'} alt="Website Logo" className='logo-container' />
-        </Link><span className='namebrand'>Eyeonic</span></Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          <Link to='/'>
+            <img src={process.env.PUBLIC_URL + '/images/EyeonicLogo.png'} alt="Website Logo" className='logo-container' />
+          </Link><span className='namebrand'>Eyeonic</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
@@ -69,7 +70,7 @@ export default function NavbarAll() {
                   )
                 })}
               </div> */}
-            </div>            
+            </div>
             <div className="user-icons">
               <a href="/user">
                 <FontAwesomeIcon icon="fa-solid fa-user" className='fa-xl' />
