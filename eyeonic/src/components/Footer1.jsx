@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Pin, LogoIonic, Call, Send } from 'react-ionicons'
+import { Pin, LogoIonic, Call, Send, Calendar, Person } from 'react-ionicons'
 
 const Footer1 = () => {
   return (
@@ -24,16 +24,16 @@ const Footer1 = () => {
               <ul>
                 <li><Pin color={'#00000'} title={'pin'} height="40px" width="40px" />
                   <span className="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                <li><a href="/"><Call color={'#00000'}  title={'call'} height="30px" width="30px" />
-                <span className="text">+2 392 3929 210</span></a></li>
-                <li><a href="/"><Send color={'#00000'}  title={'send'} height="30px" width="30px" />
-                <span className="text">info@yourdomain.com</span></a></li>
+                <li><a href="/"><Call color={'#00000'} title={'call'} height="30px" width="30px" />
+                  <span className="text">+2 392 3929 210</span></a></li>
+                <li><a href="/"><Send color={'#00000'} title={'send'} height="30px" width="30px" />
+                  <span className="text">info@yourdomain.com</span></a></li>
               </ul>
             </div>
             <form action="#" className="subscribe-form">
               <div className="form-group d-flex">
                 <input type="text" className="form-control rounded-left" placeholder="Enter email address" />
-                <button type="submit" className="form-control submit rounded-right"><span className="sr-only">Submit</span><Send color={'#00000'}  title={'send'} height="30px" width="30px" /></button>
+                <button type="submit" className="form-control submit rounded-right"><span className="sr-only">Submit</span><Send color={'#00000'} title={'send'} height="30px" width="30px" /></button>
               </div>
             </form>
           </div>
@@ -44,8 +44,18 @@ const Footer1 = () => {
               <div className="text">
                 <h3 className="heading"><a href="/">Even the all-powerful Pointing has no control about</a></h3>
                 <div className="meta">
-                  <div><a href="/"><span className="icon-calendar" /> Oct. 16, 2019</a></div>
-                  <div><a href="/"><span className="icon-person" /> Admin</a></div>
+                  <div><a href="/"><Calendar
+                    color={'#00000'}
+                    title={'calendar'}
+                    height="40px"
+                    width="40px"
+                  /> Oct. 16, 2019</a></div>
+                  <div><a href="/"><Person
+                    color={'#00000'}
+                    title={'person'}
+                    height="40px"
+                    width="40px"
+                  /> Admin</a></div>
                   <div><a href="/"><span className="icon-chat" /> 19</a></div>
                 </div>
               </div>

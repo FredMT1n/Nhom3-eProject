@@ -3,7 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Product from './Product';
 
-function BestSeller() {
+function ProductLine() {
     const [products, setProducts] = useState([]);
 
     const getProducts = () => {
@@ -14,6 +14,7 @@ function BestSeller() {
 
     useEffect(() => getProducts(), []);
 
+    const currentItems = products.slice(65, 74);
     return (
         <Carousel
             additionalTransfrom={0}
@@ -39,7 +40,7 @@ function BestSeller() {
                         max: 3000,
                         min: 1024
                     },
-                    items: 3,
+                    items: 4,
                     partialVisibilityGutter: 40
                 },
                 mobile: {
@@ -68,7 +69,7 @@ function BestSeller() {
             slidesToSlide={1}
             swipeable
         >
-            {products.map((info, index) => (
+            {currentItems.map((info, index) => (
                 <Product
                     id={info.id}
                     name={info.name}
@@ -85,4 +86,4 @@ function BestSeller() {
     );
 }
 
-export default BestSeller;
+export default ProductLine;

@@ -1,9 +1,9 @@
 import '../App.css';
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
 import { useCart } from 'react-use-cart';
+import Review from '../components/Review'
 
 function ProductDesign() {
     const { id } = useParams();
@@ -37,7 +37,7 @@ function ProductDesign() {
     }, [id]);
 
     return (
-        <div className="row" style={{border: "0px"}}>
+        <div className="row" style={{ border: "0px" }}>
             <aside className="col-md-6">
                 <div>
                     <img src={process.env.PUBLIC_URL + product.picture} alt='product' className='product' />
@@ -51,7 +51,6 @@ function ProductDesign() {
                             5.0
                             <MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 /><MdOutlineStarPurple500 />
                             <span>| 88 rating |</span>
-                            <Button variant="primary">Compare with others</Button>
                         </h4>
                         <b className='price'>{formatter.format(product.price)}</b>
                         <div className='quantity'>
@@ -74,9 +73,9 @@ function ProductDesign() {
                     </div>
                 </article>
             </main>
+            <Review />
         </div>
 
     );
 }
-
 export default ProductDesign;

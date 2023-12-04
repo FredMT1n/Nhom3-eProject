@@ -8,10 +8,11 @@ function SignIn() {
     const handleToggle = () => {
         setActive(!isActive);
     };
+    
     return (
-        <div className='body'>
-            <div className={isActive ? "container" : "container active"} id="container">
-                <div className="form-container sign-up">
+        <div className='user-body'>
+            <div className={isActive ? "user-container" : "user-container active"} id="container">
+                <div className="user-form-container sign-up">
                     <form>
                         <h1>Create account</h1>
                         <div className="social-icons">

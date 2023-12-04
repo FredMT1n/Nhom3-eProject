@@ -6,17 +6,15 @@ import post3 from '../Picture/post3.webp'
 import post4 from '../Picture/post4.webp'
 import post5 from '../Picture/post5.webp'
 import 'react-multi-carousel/lib/styles.css';
-import BestSeller from '../components/ProductLine'
+import ProductLine from '../components/ProductLine'
 
 export default class Home extends Component {
   render() {
     return (
       <div>
         <SliderComponent arrImage={[post1, post2, post3, post4, post5]} />
-        <div style={{marginTop: "40px"}}>
-          <h2>Best Seller</h2>
-          <BestSeller />
-        </div>
+        <h2 className='carousel-title'>Best Seller</h2>
+        <ProductLine />
       </div>
     )
   }

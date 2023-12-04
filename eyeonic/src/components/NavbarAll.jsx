@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -8,10 +8,34 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./Component.css";
 import { useCart } from "react-use-cart";
-
+import { useNavigate } from "react-router-dom";
 
 export default function NavbarAll() {
   const { totalUniqueItems } = useCart();
+  const navigate = useNavigate()
+
+  const [products, setProducts] = useState([]);
+  const [results, setResults] = useState([]);
+  const [query, setQuery] = useState('');
+
+  const getProducts = () => {
+    fetch("https://653f530b9e8bd3be29e04625.mockapi.io/products")
+      .then((data) => data.json())
+      .then((productList) => setProducts(productList));
+  }
+
+  useEffect(() => getProducts(), []);
+
+  const handleChange = (e) => {
+    setQuery(e.target.value)
+    if (!query.trim()) return setResults([])
+
+    const filteredValue = products.filter((info) =>
+      info.name.toLowerCase().startsWith(query)
+    )
+    setResults(filteredValue)
+    console.log(query)
+  }
   return (
     <Navbar expand="lg" className="navbar-1" fluid>
       <Container fluid>
@@ -36,14 +60,21 @@ export default function NavbarAll() {
             <Nav.Link as={Link} to="/Nhom3-eProject/contact">Contact</Nav.Link>
           </Nav>
           <Form className="form-container-nav">
-            <div>
-              <Form.Control type="search" placeholder="Search" className="control-1" aria-label="Search" style={{ textAlign: "left" }} />
-            </div>
+            <div style={{ position: "relative", width: "30vw" }}>
+              <Form.Control type="search" placeholder="Search" className="control-1" aria-label="Search" style={{ textAlign: "left" }} onChange={handleChange} />
+              {/* <div className='search-result-container'>
+                {results.map((item) => {
+                  return (
+                    <p className='search-result-item'>{item.name}</p>
+                  )
+                })}
+              </div> */}
+            </div>            
             <div className="user-icons">
               <a href="/Nhom3-eProject/user">
                 <FontAwesomeIcon icon="fa-solid fa-user" className='fa-xl' />
               </a>
-              <a href='/Nhom3-eProject/cart' style={{position: "relative"}}>
+              <a href='/Nhom3-eProject/cart' style={{ position: "relative" }}>
                 <FontAwesomeIcon icon="fa-solid fa-cart-shopping" className='fa-xl' />
                 <div className={(totalUniqueItems > 0) ? "rounded-circle" : "rounded-circle hidden1"}>
                   {totalUniqueItems}

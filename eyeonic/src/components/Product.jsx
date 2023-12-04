@@ -15,7 +15,8 @@ function Product({ name, brand, image, price, id, material, design, features }) 
             .then((usr) => setCompareItems(usr));
     }, [idx]);
 
-    const handleCompare = () => {
+    const handleCompare = (event) => {
+        event.preventDefault()
         if (compareItems.length < 3) {
             const newCompareItems = {id: id, name: name, brand: brand, picture: image , price: price, material: material, design: design, features: features}
             fetch('https://653f530b9e8bd3be29e04625.mockapi.io/compare', {
@@ -32,24 +33,28 @@ function Product({ name, brand, image, price, id, material, design, features }) 
             alert("Max 3 items in compare")
         }
     }
+
     const formatter = new Intl.NumberFormat('vi-VN', {
         style: 'currency',
         currency: 'VND'
     })
-    return (
-        <Card style={{ width: "17rem", marginLeft: "20px", cursor: "pointer", transition: "0.5s all" }} onClick={() => navigate(`/Nhom3-eProject/products/${id}`)}>
-            <Card.Img variant="top" src={process.env.PUBLIC_URL + image} />
-            <Card.Body style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-                <div>
-                    <Card.Title style={{ fontSize: "18px" }}>{name}</Card.Title>
-                </div>
-                <div>
-                    <Card.Text style={{ margin: "0" }}>{formatter.format(price)}</Card.Text>
-                    <Button variant="primary" onClick={handleCompare}>Compare with others</Button>
-                </div>
-            </Card.Body>
-        </Card>
 
+    return (
+
+        <Card style={{ width: "300px", cursor: "pointer", transition: "0.5s all" }} onClick={() => navigate(`/Nhom3-eProject/products/${id}`)}>
+            <div>
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + image} width='300px' height='300px' />
+                <Card.Body style={{ display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+                    <div>
+                        <Card.Title style={{ fontSize: "18px" }}>{name}</Card.Title>
+                    </div>
+                    <div>
+                        <Card.Text style={{ margin: "0" }}>{formatter.format(price)}</Card.Text>
+                        <Button variant="primary" onClick={handleCompare}>Compare with others</Button>
+                    </div>
+                </Card.Body>
+            </div>
+        </Card>
     );
 }
 

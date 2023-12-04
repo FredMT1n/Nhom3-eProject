@@ -32,7 +32,7 @@ function Compare(props) {
                 <Table>
                     <tbody style={{ textAlign: "center", display: "flex" }}>
                         {compareItem.map((info) => (
-                            <tr>
+                            <tr className='compare-table-row'>
                                 <td><img src={process.env.PUBLIC_URL + info.picture} alt="Compare Item" width="100px" height="100px" /></td>
                                 <td>{info.name}</td>
                                 <td>{info.price}</td>
