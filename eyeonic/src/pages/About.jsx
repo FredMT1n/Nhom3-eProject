@@ -18,7 +18,7 @@ function About() {
                     the Santos wristwatch of 1904. Cartier has a long history of sales to royalty and celebrities.
                 </div>
                 <div className="about-content-pic">
-                    <img src={process.env.PUBLIC_URL + '/images/about1.jpg'} alt='' />
+                    <img src={process.env.PUBLIC_URL + '/images/about2.jpg'} alt='' />
                 </div>
                 <div className="about-content-text">
                     Montblanc is a German company that manufactures and distributes luxury products such as pens, watches, bags
